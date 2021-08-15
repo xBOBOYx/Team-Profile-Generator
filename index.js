@@ -14,6 +14,7 @@ const managerQuestions = () => {
             name: 'name',
             message: 'Name your team manager!',
             validate: nameInput => {
+                
                 if (nameInput) {
                     return true;
                 } else {
