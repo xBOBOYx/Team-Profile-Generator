@@ -12,13 +12,13 @@ const managerQuestions = () => {
         {
             type: 'input',
             name: 'name',
-            message: 'Name your team manager!',
+            message: 'Name your team manager.',
             validate: nameInput => {
                 
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log('Please enter a name!');
+                    console.log('Please enter a name.');
                     return false;
                 }
             }
@@ -31,7 +31,7 @@ const managerQuestions = () => {
                 if (idInput) {
                     return true;
                 } else {
-                    console.log('Please enter an ID number!');
+                    console.log('Please enter an ID number.');
                     return false;
                 }
             }
@@ -44,7 +44,7 @@ const managerQuestions = () => {
                 if (emailInput) {
                     return true;
                 } else {
-                    console.log('Please enter an email address!');
+                    console.log('Please enter an email address.');
                     return false;
                 }
             }
@@ -57,7 +57,7 @@ const managerQuestions = () => {
                 if (officeNumberInput) {
                     return true;
                 } else {
-                    console.log('Please enter an office number!');
+                    console.log('Please enter an office number.');
                     return false;
                 }
             }
@@ -68,7 +68,7 @@ const managerQuestions = () => {
         const teamManager = new Manager(name, id, email, officeNumber);
 
         xmenArr.push(teamManager);
-        console.log(`${name} has been added to the team as a`,teamManager);
+        console.log(`${name} has been added to your team as a`,teamManager);
     })
     
 };
@@ -78,7 +78,7 @@ const addXmen = () => {
         {
             type: 'list',
             name: 'xmen',
-            message: 'Choose your next team member!',
+            message: 'Choose your next team member.',
             choices: ['Engineer', 'Intern',]
         },
         {
@@ -89,7 +89,7 @@ const addXmen = () => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log('Please enter a name!');
+                    console.log('Please enter a name.');
                     return false;
                 }
 
@@ -103,7 +103,7 @@ const addXmen = () => {
                 if (idInput) {
                     return true;
                 } else {
-                    console.log('Please enter an ID number!');
+                    console.log('Please enter an ID number.');
                     return false;
                 }
             }
@@ -116,7 +116,7 @@ const addXmen = () => {
                 if (emailInput) {
                     return true;
                 } else {
-                    console.log('Please enter an email address!');
+                    console.log('Please enter an email address.');
                     return false;
                 }
             }
@@ -130,7 +130,7 @@ const addXmen = () => {
                 if (githubInput) {
                     return true;
                 } else {
-                    console.log('Please enter a GitHub username!');
+                    console.log('Please enter a GitHub username.');
                     return false;
                 }
             }
@@ -144,7 +144,7 @@ const addXmen = () => {
                 if (schoolInput) {
                     return true;
                 } else {
-                    console.log('Please enter a school!');
+                    console.log('Please enter a school.');
                     return false;
                 }
             }
@@ -162,11 +162,11 @@ const addXmen = () => {
 
         if (xmen === 'Engineer') {
             xmenType = new Engineer(name, id, email, github);
-            console.log(`${name} has been added to the team as an`,xmenType);
+            console.log(`${name} has been added to your team as an`,xmenType);
 
         } else if (xmen === 'Intern') {
             xmenType = new Intern(name, id, email, school);
-            console.log(`${name} has been added to the team as an`,xmenType);
+            console.log(`${name} has been added to your team as an`,xmenType);
         }
         xmenArr.push(xmenType);
         if (confirmAddXmen) {
