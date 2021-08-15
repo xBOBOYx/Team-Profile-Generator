@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-
+const createHTML = require('./src/createHTML');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
@@ -178,10 +178,27 @@ const addXmen = () => {
     })
 };
 
-
-
+const createHTMLFile = data => {
+    fs.writeFile('./dist/index.html', data, (err) => {
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log('index.html file created.');
+        }
+    });
+};
+        
 managerQuestions()
     .then(addXmen)
+    .then(xmenArr => {
+        return createHTML(xmenArr);
+    })
+    .then(xmenHTML => {
+        return createHTMLFile(xmenHTML);
+    }
+);
+
 
 
 
