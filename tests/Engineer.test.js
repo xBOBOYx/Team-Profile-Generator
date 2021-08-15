@@ -6,7 +6,7 @@ test ("Engineer Github input", () => {
     expect(employee.github).toBe(github);
 });
 
-test ('"Employee getRole() to return "Engineer"', () => {
+test ('"Engineer getRole() to return "Engineer"', () => {
     const role = "Engineer";
     const employee = new Engineer("Boboy", 123, "boboy@boboy.com");
     expect(employee.getRole()).toBe(role);

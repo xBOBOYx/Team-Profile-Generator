@@ -1,12 +1,12 @@
 const Employee = require('../lib/Employee.js');
 
-test ('Employee Name', () => {
+test ('Employee name input', () => {
     const name = 'John Doe';
     const employee = new Employee(name);
     expect(employee.name).toBe(name);
 });
 
-test ('Employee Id', () => {
+test ('Employee Id input', () => {
     const id = '404';
     const employee = new Employee("John Doe", id,);
     expect(employee.id).toBe(id);
