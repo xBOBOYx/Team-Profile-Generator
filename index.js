@@ -68,7 +68,7 @@ const managerQuestions = () => {
         const teamManager = new Manager(name, id, email, officeNumber);
 
         xmenArr.push(teamManager);
-        console.log(`${name} has been added to the team as`,teamManager);
+        console.log(`${name} has been added to the team as a`,teamManager);
     })
     
 };
