@@ -124,7 +124,7 @@ const addXmen = () => {
             type: 'input',
             name: 'github',
             message: 'What is your team member\'s GitHub username?',
-            when: input => input === 'Engineer',
+            when: (input) => input.xmen === 'Engineer',
             validate: githubInput => {
                 if (githubInput) {
                     return true;
@@ -138,7 +138,7 @@ const addXmen = () => {
             type: 'input',
             name: 'school',
             message: 'What is your team member\'s school?',
-            when: input => input === 'Intern',
+            when: (input) => input.xmen === 'Intern',
             validate: schoolInput => {
                 if (schoolInput) {
                     return true;
@@ -147,10 +147,16 @@ const addXmen = () => {
                     return false;
                 }
             }
+        },
+        {
+            type: 'confirm',
+            name: 'confirmAddXmen',
+            message: 'Would you like to add another team member?',
+            default: false
         }
     ])
     .then(xmenInput => {
-        const { xmen, name, id, email, github, school } = xmenInput;
+        const { xmen, name, id, email, github, school,confirmAddXmen } = xmenInput;
         let xmenType;
 
         if (xmen === 'Engineer') {
@@ -173,9 +179,8 @@ const addXmen = () => {
 
 
 
-managerQuestions();
-
-addXmen();
+managerQuestions()
+    .then(addXmen)
 
 
 
