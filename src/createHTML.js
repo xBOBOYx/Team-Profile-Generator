@@ -1,7 +1,5 @@
 const createManager = function (Manager) {
-    return`
-        <div class="lg:col-span-2">
-          <ul class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
+    return `
             <li>
               <div class="space-y-4">
                 <div class="aspect-w-3 aspect-h-2">
@@ -27,18 +25,14 @@ const createManager = function (Manager) {
                       </svg>
                     </a>
                   </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    </div>
+                  </ul>
+                </div>
+                </li>
   `;
 };
 
 const createEngineer = function (Engineer) {
-    return`
-        <div class="lg:col-span-2">
-          <ul class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
+    return `
             <li>
               <div class="space-y-4">
                 <div class="aspect-w-3 aspect-h-2">
@@ -73,18 +67,11 @@ const createEngineer = function (Engineer) {
                 </ul>
               </div>
             </li>
-          </ul>
-        </div>
-        </div>
-    </div>
-    </div>
   `;
 };
 
 const createIntern = function (Intern) {
-    return`
-        <div class="lg:col-span-2">
-          <ul class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
+    return `
             <li>
               <div class="space-y-4">
                 <div class="aspect-w-3 aspect-h-2">
@@ -110,11 +97,10 @@ const createIntern = function (Intern) {
                       </svg>
                     </a>
                   </li>
-                </ul>     
-            </div>
-        </div>
-    </div>
-    </div>
+                  </ul>
+                </div>
+                </li>
+            
   `;
 };
 
@@ -143,7 +129,7 @@ createHTML = (data) => {
 };
 
 const createXmenPage = function (xmenCards) {
-    return`
+    return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -155,15 +141,21 @@ const createXmenPage = function (xmenCards) {
 </head>
 <body>
 <div class="bg-white">
-    <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
-      <div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
-        <div class="space-y-5 sm:space-y-4">
-          <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Our Team</h2>
-          <p class="text-xl text-gray-500">Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue ultrices sed arcu condimentum vestibulum suspendisse. Volutpat eu faucibus vivamus eget bibendum cras.</p>
-        </div>
+  <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+    <div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+      <div class="space-y-5 sm:space-y-4">
+        <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Our Team</h2>
+        <p class="text-xl text-gray-500">Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue ultrices sed arcu condimentum vestibulum suspendisse. Volutpat eu faucibus vivamus eget bibendum cras.</p>
+      </div>
+      <div class="lg:col-span-2">
+        <ul class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
 <!-- X-Men Cards -->
 ${xmenCards}
-  
+</ul>
+</div>
+</div>
+</div>
+</div> 
 </body>
 <script src="jquery-3.5.1.min.js"></script>
 </html>
@@ -172,4 +164,3 @@ ${xmenCards}
 }
 
 module.exports = createHTML;
-    
