@@ -68,7 +68,7 @@ const managerQuestions = () => {
         const teamManager = new Manager(name, id, email, officeNumber);
 
         xmenArr.push(teamManager);
-        console.log(`${name} has been added to the team!`);
+        console.log(`${name} has been added to the team as`,teamManager);
     })
     
 };
@@ -162,11 +162,11 @@ const addXmen = () => {
 
         if (xmen === 'Engineer') {
             xmenType = new Engineer(name, id, email, github);
-            console.log(`${name} has been added to the team!`);
+            console.log(`${name} has been added to the team as an`,xmenType);
 
         } else if (xmen === 'Intern') {
             xmenType = new Intern(name, id, email, school);
-            console.log(`${name} has been added to the team!`);
+            console.log(`${name} has been added to the team as an`,xmenType);
         }
         xmenArr.push(xmenType);
         if (confirmAddXmen) {
