@@ -145,7 +145,7 @@ const createXmenPage = function (xmenCards) {
     <div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
       <div class="space-y-5 sm:space-y-4">
         <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Our Team</h2>
-        <p class="text-xl text-gray-500">Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue ultrices sed arcu condimentum vestibulum suspendisse. Volutpat eu faucibus vivamus eget bibendum cras.</p>
+        <p class="text-xl text-gray-500">Our coding team will be your one stop shop to make your ideas come to life. We have a manager to see that the project will meet exceend your expectations. An engineer for coding and in intern to help with all areas of the project.</p>
       </div>
       <div class="lg:col-span-2">
         <ul class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8">
