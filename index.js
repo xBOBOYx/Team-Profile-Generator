@@ -196,8 +196,10 @@ managerQuestions()
     })
     .then(xmenHTML => {
         return createHTMLFile(xmenHTML);
-    }
-);
+    })
+    .catch(err => {
+        console.log(err);
+    });
 
 
 
