@@ -7,13 +7,11 @@ const createManager = function (Manager) {
                 </div>
                 <div class="text-lg leading-6 font-medium space-y-1">
                   <h3>${Manager.name}</h3>
-                  <h4>Office - ${Manager.officeNumber}</h4>
                   <h4>ID - ${Manager.id}</h4>
-
                   <p class="text-indigo-600">Manager</p>
                 </div>
                 <div class="text-lg">
-                  <p class="text-gray-500">You can contact ${Manager.name} via email at ${Manager.email} or with the email link below.</p>
+                  <p class="text-gray-500">You can contact ${Manager.name} via email at ${Manager.email} or office - ${Manager.officeNumber}.</p>
                 </div>
   
                 <ul class="flex space-x-5">
@@ -80,8 +78,6 @@ const createIntern = function (Intern) {
                 <div class="text-lg leading-6 font-medium space-y-1">
                   <h3>${Intern.name}</h3>
                   <h4>ID - ${Intern.id}</h4>
-            
-
                   <p class="text-indigo-600">${Intern.school} Intern</p>
                 </div>
                 <div class="text-lg">
