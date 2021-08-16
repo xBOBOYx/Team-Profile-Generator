@@ -178,6 +178,8 @@ const addXmen = () => {
     })
 };
 
+
+
 const createHTMLFile = data => {
     fs.writeFile('./dist/index.html', data, (err) => {
         if (err) {
