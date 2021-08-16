@@ -1,6 +1,6 @@
 # Team Profile Generator
 
-![](https://img.shields.io/badge/License-MITLicense%20-blue?style=flat-square)
+![MIT](https://img.shields.io/badge/License-MITLicense%20-blue?style=flat-square)
 
 ## Description
 
@@ -37,4 +37,4 @@ This project is convered under the MIT License.
 
 ## Questions
 
-For questions about this project, please see my GitHub at [xBOBOYx](https://github.com/xBOBOYx), or reach out by email at boboy.zamora@gmail.
+For questions about this project, please see my GitHub at [xBOBOYx](https://github.com/xBOBOYx), or reach out by email at boboy.zamora@gmail.com.
