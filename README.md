@@ -13,6 +13,8 @@ Team Profile Generator will create a website that will display your team member'
 Click the link below to see a demo of Team Profile Generator:
 
 #### [Team Profile Generator Demo](https://www.youtube.com/watch?v=aFYB1NBqE5s)
+
+![xmen](assets/xmen.png)
 ## Table of Contents
 
 * [Installation](#installation)
