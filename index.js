@@ -1,12 +1,19 @@
+// node 
 const inquirer = require('inquirer');
 const fs = require('fs');
+
+// Link to the createHTMLFile function
 const createHTML = require('./src/createHTML');
+
+// link to team profiles
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 
+// assemble the team(xmen!)
 const xmenArr = [];
 
+// Manager questions
 const managerQuestions = () => {
     return inquirer.prompt([
         {
@@ -73,6 +80,7 @@ const managerQuestions = () => {
     
 };
 
+// Add team members
 const addXmen = () => {
     return inquirer.prompt([
         {
@@ -179,7 +187,7 @@ const addXmen = () => {
 };
 
 
-
+// creates html file    
 const createHTMLFile = data => {
     fs.writeFile('./dist/index.html', data, (err) => {
         if (err) {
